@@ -58,3 +58,10 @@ get_elevation_data <- function(country_elevation, country_elevation_df) {
 }
 
 country_elevation_df <- get_elevation_data()
+
+map_url <- "https://github.com/milos-agathon/crisp-topographical-map-with-r/blob/main/R/map.r"
+source(map_url) # load script
+
+country_map <- get_elevation_map()
+
+ggsave(filename="italy_topo_map.png", width=7, height=8.5, dpi = 600, device='png', country_map)
