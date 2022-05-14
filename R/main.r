@@ -59,6 +59,9 @@ get_elevation_data <- function(country_elevation, country_elevation_df) {
 
 country_elevation_df <- get_elevation_data()
 
+# 3. MAP
+#---------
+
 map_url <- "https://github.com/milos-agathon/crisp-topographical-map-with-r/blob/main/R/map.r"
 source(map_url) # load script
 
