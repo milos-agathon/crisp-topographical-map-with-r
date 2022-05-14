@@ -1,6 +1,3 @@
-# 3. MAP
-#---------
-
 get_elevation_map <- function(country_map) {
 
 	country_map <- ggplot() +
