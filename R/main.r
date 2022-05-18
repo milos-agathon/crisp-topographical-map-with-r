@@ -46,7 +46,7 @@ get_elevation_data <- function(country_elevation, country_elevation_df) {
 
 	country_elevation <- get_elev_raster(
 		locations = country_transformed, 
-		z = 9, 
+		z = 9, # Please decrease the z value if you experience R crashing
 		clip = "locations") 
 
 	country_elevation_df <- as.data.frame(country_elevation, xy = T) %>%
